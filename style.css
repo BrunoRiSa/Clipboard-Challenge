@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page {
+  max-width: 1440px;
+  font-family: "Noto Serif", "Times New Roman", serif;
+  font-family: "Bai Jamjuree";
+  margin-inline: auto;
+}
+
+.header {
+  background-image: url(images/bg-header-desktop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 70vh;
+}
+
+.header__content {
+  font-size: px;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__logo {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 30px;
+}
+
+.header__title {
+  font-size: 35px;
+  margin-bottom: 15px;
+  color: hsl(210, 10%, 33%);
+}
+
+.header__subtitle {
+  line-height: 25px;
+  margin-bottom: 40px;
+  color: hsl(201, 11%, 66%);
+}
+
+.header__span {
+  display: block;
+}
+
+.header__button-ios {
+  padding: 10px 25px;
+  background-color: hsl(171, 66%, 44%);
+  border-radius: 30px;
+  font-size: 15px;
+  text-decoration: none;
+  color: #fff;
+  box-shadow: 5px 5px 8px hsla(171, 66%, 44%, 0.245);
+}
+
+.header__button-ios:hover {
+  padding: 12px 27px;
+  font-size: 16px;
+  transition: 0.3s;
+  margin-right: 5px;
+}
+
+.header__button-mac {
+  background-color: hsl(233, 100%, 69%);
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 15px;
+  text-decoration: none;
+  color: #fff;
+  box-shadow: 5px 5px 8px hsla(233, 100%, 69%, 0.245);
+  /* max-width: 154px; */
+}
+
+.header__button-mac:hover {
+  padding: 12px 22px;
+  font-size: 16px;
+  transition: 0.3s;
+  margin-left: 5px;
+}
+
+@media screen and (max-width: 780px) {
+  .header__title {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+
+  .header__subtitle {
+    max-width: 375px;
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+
+  .header__span {
+    display: inline;
+  }
+
+  .header__buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  .header__button-ios:hover {
+    margin-right: 0;
+  }
+
+  .header__button-mac:hover {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .header__content {
+    max-width: 290px;
+    width: 100%;
+    padding-top: 80px;
+  }
+
+  .header__span-mq {
+    display: block;
+  }
+}
